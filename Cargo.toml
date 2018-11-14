@@ -1,0 +1,6 @@
+[package]
+name = "substrate-contracts-adder"
+version = "0.1.0"
+authors = ["samzhuwj <samzhuwj@gmail.com>"]
+
+[dependencies]
