@@ -3,4 +3,14 @@ name = "substrate-contracts-adder"
 version = "0.1.0"
 authors = ["samzhuwj <samzhuwj@gmail.com>"]
 
+[lib]
+crate-type = ["cdylib"]
+
 [dependencies]
+parity-codec = { version = "2.0.2", default-feature = false }
+parity-codec-derive = { version = "2.0.2", default-feature = false }
+wee_alloc = "0.4"
+
+[profile.realse]
+panic = "abort"
+lto = true
